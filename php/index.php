@@ -173,6 +173,132 @@ echo (rand()),"<br>";
 //jodi fixed area dite chai
 echo (rand(10,50)),"<br>";
 
+
+// comparison operators
+// == just check value or === equal check value or type
+$x=50;
+$y="50";
+
+echo var_dump($x==$y),"<br>";
+
+echo var_dump($x===$y),"<br>";
+
+// != use shotcut <>
+
+echo var_dump($x!=$y),"<br>", var_dump($x<>$y),"<br>";
+
+// greater than less than
+
+echo var_dump($x>$y),"<br>", var_dump($x<=$y),"<br>";;
+
+
+// if else statment
+
+if(5>5){
+   echo "Good Morining","<br>";
+}else{
+   echo"Good Evening","<br>";
+}
+$date=date("H");
+
+if($date>4){
+echo"Good Evening",$date,"<br>";
+}elseif($date<10){
+   echo"Have Nice day","<br>";
+}
+
+
+else{
+   echo "Good Morining",$date,"<br>"; 
+}
+
+// switch in php
+
+switch("green"){
+   case "red":
+      echo "Apple Is red","<br>";
+      break;
+      case "green":
+         echo "Nature is green","<br>";
+         break;
+         default:
+         echo"I love learning new Something","<br>";
+}
+
+
+
+// php loop
+// while
+$num=0;
+while($num<=5){
+   echo"hello World",$num,"<br>";
+   $num++;
+}
+
+// do while
+// return value first than comparison value
+
+$nume=0;
+do{
+   echo "The Number is:$nume","<br>";
+   $nume++;
+}while($nume<=5);
+
+
+// for Loop
+
+for($i=0;$i<=10;$i++){
+   echo"Hello For Loop",$i,"<br>";
+}
+
+for($i=0;$i<=50;$i+=5){
+   echo"Hello Loop increase 5",$i,"<br>";
+}
+
+
+// php Function
+
+// it's behave like js function but few thins here change like
+//  here when we declear a parameter than use $ dollar
+
+function test_name($name,$age){
+   echo "This is Function $name and his age $age <br>";
+}
+
+test_name("Ayan",21);
+test_name("Iqbal",22);
+
+
+// Date and time in PhP
+
+// some importand sign in date and time
+// h mean Hour
+// i mean minute
+// sa means seconds
+// y mean year
+// m means Month
+// d means day
+
+
+
+
+
+echo "Today Is". date("d/m/y")."<br>";
+
+// dot dite dwkhate chaile dot(.)
+echo "Today Is". date("d.m.y")."<br>";
+
+//Hypen diye dekhte chaile -
+echo "Today Is". date("d-m-y")."<br>";
+
+// default time zone set use date_default_timezone_get
+// date_default_timezone_get("Asia/Dhaka");
+echo "Today Time Is ". date("h:i:sa")."<br>";
+
+
+
+
+
 ?>
 
 

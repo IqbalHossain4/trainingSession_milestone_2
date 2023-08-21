@@ -297,23 +297,15 @@ echo "Today Time Is ". date("h:i:sa")."<br>";
 
 
 //cookie
+// time() ati akti function
+setcookie('username','Ayan',time()+10);
+echo  $_COOKIE['username']."<br>";
 
-$cookie_name = "user";
-$cookie_value = "Alex Porter";
-setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
-
-if(!isset($_COOKIE[$cookie_name])) {
-   echo "Cookie named '" . $cookie_name . "' is not set!";
- } else {
-   echo "Cookie '" . $cookie_name . "' is set!<br>";
-   echo "Value is: " . $_COOKIE[$cookie_name];
- }
 
 //session
 session_start();
-$_SESSION["favcolor"] = "green";
-$_SESSION["favanimal"] = "cat";
-echo "Favorite color is " . $_SESSION["favcolor"] . ".<br>";
+$_SESSION["username"] = "ayan";
+echo "User Name is " . $_SESSION["username"] . "<br>";
 
 
 
